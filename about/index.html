@@ -82,14 +82,18 @@
 
 
 
+<meta name="description" content="just a personal blog to write something i want to">
+<meta name="keywords" content="web | front-end | hexo | blog">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
 <meta property="og:url" content="http://yoursite.com/about/index.html">
 <meta property="og:site_name" content="welcome to fee-pg blog">
+<meta property="og:description" content="just a personal blog to write something i want to">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2018-08-13T09:12:44.814Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="about">
+<meta name="twitter:description" content="just a personal blog to write something i want to">
 
 
 
@@ -136,16 +140,16 @@
 
 
   
-  <!-- ҳ������ʱtitle��Ƥ�淨 -->
+  <!-- 页面隐藏时title的调皮玩法 -->
   <script>
 	var originTitle = document.title;
 	var st;
 	document.addEventListener("visibilitychange", function(){
 		if(document.hidden){
-			document.title = "(�ĥ�?)�Ҳغ���Ŷ";
+			document.title = "(つェ⊂)我藏好了哦";
 			clearTimeout(st);
 		} else {
-			document.title = "(*��?��*)  ���㷢��������~" + originTitle;
+			document.title = "(*´∇｀*)  被你发现啦嘻嘻~" + originTitle;
 			st = setTimeout(function() {
 				document.title = originTitle;
 			},4000);
@@ -178,7 +182,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <p class="site-subtitle">enjoy yourself in here</p>
       
   </div>
 
@@ -371,7 +375,7 @@
                 alt="fee-pg" />
             
               <p class="site-author-name" itemprop="name">fee-pg</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">just a personal blog to write something i want to</p>
           </div>
 
           <nav class="site-state motion-element">
