@@ -138,6 +138,24 @@
 
 
 
+  
+  <!-- ҳ������ʱtitle��Ƥ�淨 -->
+  <script>
+	var originTitle = document.title;
+	var st;
+	document.addEventListener("visibilitychange", function(){
+		if(document.hidden){
+			document.title = "(�ĥ�?)�Ҳغ���Ŷ";
+			clearTimeout(st);
+		} else {
+			document.title = "(*��?��*)  ���㷢��������~" + originTitle;
+			st = setTimeout(function() {
+				document.title = originTitle;
+			},4000);
+		}
+	})
+  </script>
+  
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
